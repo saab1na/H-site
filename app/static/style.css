@@ -34,6 +34,8 @@
     letter-spacing: 2px;
     width: 250px;
     margin: 50px auto;
+
+    cursor: pointer;
 }
 
 .border-button:before, .border-button:after {
