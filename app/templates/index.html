@@ -10,16 +10,20 @@
 
     <meta name="robots" content="noindex"/>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 <main>
     <div class="background-img">
         <h1 class="big-t"> RUSSIAN HACKER </h1>
         <h2 class="normal-t"> Yes, I am) Don't agree?! </h2>
-        <button class="border-button"> No, I don't agree</button>
+        <button class="border-button" onclick="redirect_to_next_page()">No, I don't agree</button>
     </div>
-
 </main>
+<script rel="script">
+    function redirect_to_next_page() {
+        window.location.href = '/some-link'  // тут просто подставь вместо "some-link" ссылку на ту страничку
+    }
+</script>
 </body>
 </html>
